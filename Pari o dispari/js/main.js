@@ -1,9 +1,9 @@
 let choice = prompt('Inserisci pari o dispari');
-    /*while (choice != 'pari' || choice != 'dispari') {
+    while (choice != 'pari' && choice != 'dispari') {
         console.log(choice);
         alert('inserisci una scelta tra pari e dispari');
         choice = prompt('Inserisci pari o dispari');
-    }*/ //! ciclo while non funzionante----> rivedere gli argomenti perchè, anche se verificati, non permettono di uscire dal ciclo 
+    }
 console.log('Hai scelto', choice);
 
 let userNumber = parseInt(prompt('Inserisci un numero tra 1 e 5'));
@@ -19,7 +19,7 @@ console.log('numero computer', randomNumber);
 const sum = userNumber + randomNumber;
 console.log('somma', sum);
 
-console.log('il numero è pari', evenOddCheck(sum));
+console.log('la somma è pari', evenOddCheck(sum));
 
 //condizione per determinare il vincitore
 if (choice == 'pari' && evenOddCheck(sum) == true) {
