@@ -1,4 +1,9 @@
-const userPrompt = prompt('Inserisci una parola');
+let userPrompt = prompt('Inserisci una parola');
+    while (userPrompt.length < 3 || !isNaN(userPrompt)) {
+        alert('Parola inserita non valida');
+        userPrompt = prompt('Inserisci una parola');
+    } 
+
 console.log(palindromeCheck(userPrompt));
 
 function palindromeCheck(string) {
